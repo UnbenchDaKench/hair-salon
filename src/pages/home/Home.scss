@@ -1,0 +1,408 @@
+$card-colour: #a88361;
+$button-colour: #6b5858;
+
+.home-page {
+  .header {
+    .header-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 50%;
+    }
+    .text {
+      color: white;
+      font-family: roboto;
+      text-align: center;
+      font-size: 25px;
+      width: 200px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -150%);
+      //   animation-name: slideUp;
+      //   animation-duration: 4s;
+      //   animation-timing-function: ease-in;
+    }
+  }
+  .introduction {
+    .intro-box {
+      .intro-text {
+        width: 160px;
+        text-align: center;
+        color: white;
+        font-family: Roboto;
+        font-size: 15px;
+        margin-left: 20px;
+        margin-top: 10%;
+      }
+      .more-info-button {
+        background-color: $button-colour;
+        color: white;
+        text-align: center;
+        padding: 10px 10px;
+        margin-left: 20px;
+        font-size: 13px;
+      }
+      .intro-picture {
+        position: absolute;
+
+        width: 130px; //124.45px;
+        height: auto; //186.67px;
+        object-fit: cover;
+        border-radius: 15px;
+        left: 205px;
+        top: 26px;
+      }
+    }
+  }
+  .our-services {
+    .our-services-title {
+      text-align: center;
+      color: white;
+    }
+    .our-services-container {
+      .service {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .service-picture {
+          width: 50%;
+          align-self: center;
+          //margin-left: 25%;
+          height: auto;
+          object-fit: cover;
+          border-radius: 1000px;
+        }
+        .service-title {
+          text-align: center;
+          color: white;
+          font-family: Roboto;
+          font-size: 25px;
+        }
+      }
+    }
+  }
+  .gallery {
+    .gallery-blurb {
+      .gallery-text {
+        text-align: center;
+        color: white;
+        font-family: Roboto;
+        font-size: 40px;
+        width: 90%;
+        margin-top: 20%;
+      }
+      .view-gallery-button {
+        background-color: $button-colour;
+        color: white;
+        text-align: center;
+        padding: 10px 10px;
+        margin-left: 20px;
+        font-size: 13px;
+      }
+    }
+  }
+  .call-to-action{
+    .text{
+        color: white;
+        font-size: 40px;
+        font-family: Roboto;
+        text-align: center;
+    }
+    .book-appointment-button{
+        background-color: $button-colour;
+        font-size: 20px;
+        text-align: center;
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .home-page {
+    .header {
+      .header-image {
+        height: 625px;
+      }
+      .text {
+        font-size: 35px;
+        width: 270px;
+        transform: translate(-50%, -170%);
+      }
+    }
+    .introduction {
+      .intro-box {
+        .intro-text {
+          width: 250px;
+          font-size: 27px;
+        }
+        .more-info-button {
+          padding: 10px 20px;
+          margin-left: 20px;
+          font-size: 20px;
+        }
+        .intro-picture {
+          width: 250px;
+          left: 300px;
+
+          top: 30px;
+        }
+      }
+    }
+    .our-services {
+      .our-services-title {
+        font-size: 50px;
+      }
+      .our-services-container {
+        .service {
+          .service-picture {
+            width: 45%;
+          }
+          .service-title {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+    .gallery{
+        .gallery-blurb{
+            .gallery-text{
+                margin-top: 35%;
+                font-size: 45px;
+            }
+        }
+    }
+  }
+}
+@media only screen and (min-width: 900px) {
+  .home-page {
+    .header {
+      .header-image {
+        height: 750px;
+      }
+      .text {
+        font-size: 45px;
+        width: 360px;
+        transform: translate(-50%, -170%);
+      }
+    }
+    .introduction {
+      .intro-box {
+        .intro-text {
+          width: 360px;
+          font-size: 39px;
+        }
+        .more-info-button {
+          padding: 10px 20px;
+          margin-left: 20px;
+          font-size: 20px;
+        }
+        .intro-picture {
+          width: 350px;
+          left: 400px;
+
+          top: 40px;
+        }
+      }
+    }
+    .gallery{
+        .gallery-blurb{
+            
+            .gallery-text{
+                font-size: 60px;
+                margin-top: 45%;
+                
+            }
+            .view-gallery-button{
+                font-size: 25px;
+            }
+        }
+    }
+    .call-to-action{
+        .text{
+            width: 90%;
+            font-size: 50px;
+            margin-left: 5%;
+            
+        }
+        .book-appointment-button{
+            background-color: $button-colour;
+            font-size: 20px;
+            text-align: center;
+            margin-left: 20%;
+            width: 60%;
+        }
+      }
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .home-page {
+    .header {
+      .header-image {
+        height: 875px;
+      }
+      .text {
+        font-size: 55px;
+        width: 450px;
+        transform: translate(-50%, -170%);
+      }
+    }
+    .introduction {
+      .intro-box {
+        .intro-text {
+          width: 450px;
+          font-size: 49px;
+        }
+        .more-info-button {
+          padding: 10px 30px;
+          margin-left: 20px;
+          font-size: 25px;
+        }
+        .intro-picture {
+          width: 425px;
+          left: 550px;
+
+          top: 50px;
+        }
+      }
+    }
+    .our-services {
+      .our-services-title {
+        font-size: 50px;
+      }
+      .our-services-container {
+        .service {
+          width: 366.67px;
+          justify-content: space-between;
+          margin-top: 3%;
+          .service-picture {
+            width: 40%;
+            align-self: center;
+          }
+          .service-title {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+    .gallery{
+        .gallery-blurb{
+            .gallery-text{
+                font-size: 50px;
+                margin-top: 10%;
+            }
+            .view-gallery-button{
+                margin-left: 15%;
+                
+            }
+        }
+        
+    }
+  }
+}
+@media only screen and (min-width: 1536px) {
+  .home-page {
+    .header {
+      .header-image {
+        height: 1000px;
+      }
+      .text {
+        font-size: 64px;
+        width: 450px;
+        transform: translate(-50%, -170%);
+      }
+    }
+    .introduction {
+      .intro-box {
+        .intro-text {
+          width: 590px;
+          font-size: 64px;
+        }
+        .more-info-button {
+          padding: 10px 30px;
+          margin-left: 20px;
+          font-size: 25px;
+        }
+        .intro-picture {
+          width: 473px;
+          left: 690px;
+
+          top: 60px;
+        }
+      }
+    }
+    .our-services {
+      .our-services-title {
+        font-size: 50px;
+      }
+      .our-services-container {
+        margin-top: 5%;
+        .service {
+          width: 466.67px;
+          justify-content: space-between;
+          .service-picture {
+            width: 40%;
+            align-self: center;
+          }
+          .service-title {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+    .gallery{
+        .gallery-blurb{
+            .gallery-text{
+                font-size: 60px;
+                margin-top: 10%;
+                width: 60%;
+                margin-left: 20%;
+            }
+            .view-gallery-button{
+                margin-left: 15%;
+                
+            }
+        }
+        
+    }
+    .call-to-action{
+        .text{
+            width: 90%;
+            font-size: 60px;
+            margin-left: 5%;
+            
+        }
+        .book-appointment-button{
+            background-color: $button-colour;
+            font-size: 25px;
+            text-align: center;
+            margin-left: 17.5%;
+            width: 65%;
+        }
+      }
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideUp {
+  0%,
+  50% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  60%,
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.links {
+  text-decoration: none;
+}

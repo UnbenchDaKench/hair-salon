@@ -1,0 +1,109 @@
+.stylists-page{
+    width: 100%;
+    height: 2300px;
+    .title{
+        text-align: center;
+        color: white;
+    }
+    .stylist{
+        .stylist-img{
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 100px;
+            object-position: 50% 20%;
+            align-self: center;
+        }
+        .stylist-description-box{
+            .stylist-name{
+                text-align: center;
+                color: white;
+            }
+            .stylist-description{
+                text-align: center;
+                color: white;
+                font-size: 20px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 600px){
+    .stylists-page{
+        height: 2500px;
+        .title{
+            font-size: 36px;
+        }
+        .stylist{
+            .stylist-img{
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 100px;
+                object-position: 50% 20%;
+                align-self: center;
+            }
+            .stylist-description-box{
+                .stylist-name{
+                    font-size: 28px;
+                }
+                .stylist-description{
+                  
+                    font-size: 23px;
+                    
+                }
+            }
+        }
+    }    
+}
+
+@media only screen and (min-width: 900px){
+    .stylists-page{
+        height: 2000px;
+        .title{
+            font-size: 45px;
+        }
+        .stylist{
+            .stylist-img{
+              
+            }
+            .stylist-description-box{
+                .stylist-name{
+                    font-size: 28px;
+                }
+                .stylist-description{
+                  
+                    font-size: 23px;
+                    
+                }
+            }
+        }
+    }    
+}
+
+@media only screen and (min-width: 1536px){
+    .stylists-page{
+        height: 1500px;
+        .title{
+            font-size: 50px;
+        }
+        .stylist{
+            .stylist-img{
+                width: 250px;
+                height: 250px;
+               
+            }
+            .stylist-description-box{
+                .stylist-name{
+                    font-size: 30px;
+                }
+                .stylist-description{
+                  
+                    font-size: 28px;
+                    
+                }
+            }
+        }
+    }    
+}

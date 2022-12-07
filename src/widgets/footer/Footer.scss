@@ -1,0 +1,55 @@
+.social-icons {
+  width: 45%;
+  height: auto;
+}
+
+.bottom-nav-links {
+  width: 50%;
+  text-decoration: none;
+  .nav-links {
+    //width: 50%;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    padding-right: 3%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .social-icons {
+    width: 30%;
+  }
+  .bottom-nav-links {
+    
+    .nav-links {
+      padding-left: 25%;
+    }
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .social-icons {
+    width: 25%;
+  }
+  .bottom-nav-links {
+    .nav-links {
+      padding-left: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+    .social-icons {
+        width: 18%;
+      }
+    .bottom-nav-links {
+        width: 33.33%;
+        .nav-links {
+            font-size: 20px;
+          padding-left: 0;
+        }
+      }
+}
+
+@media only screen and (min-width: 1536px) {
+}
