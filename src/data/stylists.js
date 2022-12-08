@@ -1,5 +1,5 @@
 import JanellJabari from "../images/pictures/Janell-Jabari.jpg";
-import LussaneRichards from "../images/pictures/stylist1.jpg";
+import LussaneRichards from "../images/pictures/stylist5.jpg";
 import GiselleGrant from "../images/pictures/stylist2.jpg";
 import BolanleAlade from "../images/pictures/stylist3.jpg";
 import SusanBrown from "../images/pictures/stylist4.jpg";

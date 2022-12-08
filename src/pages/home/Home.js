@@ -34,7 +34,7 @@ const Home = () => {
           },
         }}
       >
-        <img className="header-image" src={headerImage} alt="" loading="lazy" />
+        <img className="header-image" src={headerImage} alt="" />
         <h1 className="text">Top Quality Dreadlocks and Braids</h1>
       </Box>
 
