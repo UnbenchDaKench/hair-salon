@@ -94,7 +94,7 @@ const Home = () => {
               className="intro-picture"
               src={IntroImage}
               alt=""
-              loading="lazy"
+              
             />
           </Box>
         </Box>
@@ -171,7 +171,7 @@ const Home = () => {
                         className="service-picture"
                         src={service.servicePicture}
                         alt=""
-                        loading="lazy"
+                        
                       />
                       <h4 className="service-title">{service.serviceName}</h4>
                     </div>
@@ -262,7 +262,7 @@ const Home = () => {
                       src={`${picture.photo}?w=248&fit=crop&auto=format`}
                       srcSet={`${picture.photo}?w=248&fit=crop&auto=format&dpr=2 2x`}
                       alt="home gallery"
-                      loading="lazy"
+                      
                     />
                   </ImageListItem>
                 ))}
