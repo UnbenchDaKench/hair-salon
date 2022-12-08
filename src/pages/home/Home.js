@@ -38,7 +38,7 @@ const Home = () => {
         <h1 className="text">Top Quality Dreadlocks and Braids</h1>
       </Box>
 
-      <FadeInTransition>
+      <FadeInTransition className="fade-in-height">
         <Box
           className="introduction"
           sx={{
@@ -90,20 +90,22 @@ const Home = () => {
             >
               More Info
             </Button>
-            <img
-              className="intro-picture"
-              src={IntroImage}
-              alt=""
-              
-            />
+            <img className="intro-picture" src={IntroImage} alt="" />
           </Box>
         </Box>
       </FadeInTransition>
       <br />
       <br />
       <br />
-
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <FadeInTransition>
+        
         <Box
           sx={{
             display: "flex",
@@ -171,7 +173,6 @@ const Home = () => {
                         className="service-picture"
                         src={service.servicePicture}
                         alt=""
-                        
                       />
                       <h4 className="service-title">{service.serviceName}</h4>
                     </div>
@@ -182,6 +183,10 @@ const Home = () => {
           </Box>
         </Box>
       </FadeInTransition>
+      <br />
+      <br />
+      <br />
+      <br />
       <FadeInTransition>
         <Box
           sx={{
@@ -262,7 +267,6 @@ const Home = () => {
                       src={`${picture.photo}?w=248&fit=crop&auto=format`}
                       srcSet={`${picture.photo}?w=248&fit=crop&auto=format&dpr=2 2x`}
                       alt="home gallery"
-                      
                     />
                   </ImageListItem>
                 ))}
