@@ -1,11 +1,13 @@
 import React from "react";
 import "./Footer.scss";
-import Container from "@mui/material/Container";
+
+//styles
 import Box from "@mui/material/Box";
 
 //icons
 import InstagramIcon from "../../images/icons/instagram-svgrepo-com.svg";
 import TwitterIcon from "../../images/icons/twitter-svgrepo-com.svg";
+
 import { Link } from "react-router-dom";
 
 const pages = [
@@ -73,7 +75,7 @@ export default function Footer() {
           flexWrap: "wrap",
           alignItems: "center",
           alignSelf: "center",
-          paddingTop: { sm: "5%", md: '0' },
+          paddingTop: { sm: "5%", md: "0" },
         }}
       >
         {pages.map((page, i) => (

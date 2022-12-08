@@ -17,7 +17,6 @@ import Button from "@mui/material/Button";
 //data
 import Services from "../../data/home-services";
 import Pictures from "../../data/home-gallery-pictures";
-import services from "../../data/home-services";
 
 const Home = () => {
   return (

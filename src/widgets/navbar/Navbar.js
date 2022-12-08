@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Logo from "../../images/icons/top-notch-locs.png";
 import "./Navbar.scss";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -10,12 +9,10 @@ import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Avatar from "@mui/material/Avatar";
+
 import Button from "@mui/material/Button";
-import Tooltip from "@mui/material/Tooltip";
+
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
-import Home from "../../pages/home/Home";
 
 const pages = [
   /* { page: "Home", path: "/" }, */
@@ -25,25 +22,16 @@ const pages = [
   { page: "Stylists", path: "/stylists" },
   { page: "Contact", path: "/contact" },
 ];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 export default function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
-  };
-
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
   };
 
   return (
@@ -86,79 +74,83 @@ export default function Navbar() {
             >
               {pages.map((page) => (
                 <NavLink to={page.path} key={page.page} className="links">
-                  <MenuItem  onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center" sx={{color:'black'}}>{page.page}</Typography>
-                </MenuItem>
+                  <MenuItem onClick={handleCloseNavMenu}>
+                    <Typography textAlign="center" sx={{ color: "black" }}>
+                      {page.page}
+                    </Typography>
+                  </MenuItem>
                 </NavLink>
-                
               ))}
             </Menu>
           </Box>
-          <NavLink to='/' className='links'>     
-          <Box
-            sx={{
-              display: {
-                xs: "flex",
-                md: "flex",
-              },
-            }}
-          >
-            <Typography
-              variant="h6"
-              noWrap
-              component="a"
-              href="/"
+          <NavLink to="/" className="links">
+            <Box
               sx={{
-                mr: 2,
-                display: { xs: "flex", md: "flex" },
-                fontFamily: "monospace",
-                fontWeight: 700,
-                letterSpacing: ".3rem",
-                color: "white",
-                textDecoration: "none",
-                
+                display: {
+                  xs: "flex",
+                  md: "flex",
+                },
               }}
             >
-              Top Notch
-            </Typography>
-            <Typography
-              variant="h6"
-              noWrap
-              component="a"
-              href="/"
-              sx={{
-                mr: 2,
-                display: { xs: "flex", md: "flex" },
-                fontFamily: "monospace",
-                fontWeight: 800,
-                letterSpacing: ".3rem",
-                color: "#a88361",
-                textDecoration: "none",
-                marginRight: {
-                  xs: 15,
-                  sm: 25,
-                  md: 'none',
-                }
-              }}
-            >
-              Locs
-            </Typography>
-          </Box>
-          </NavLink> 
+              <Typography
+                variant="h6"
+                noWrap
+                component="a"
+                href="/"
+                sx={{
+                  mr: 2,
+                  display: { xs: "flex", md: "flex" },
+                  fontFamily: "monospace",
+                  fontWeight: 700,
+                  letterSpacing: ".3rem",
+                  color: "white",
+                  textDecoration: "none",
+                }}
+              >
+                Top Notch
+              </Typography>
+              <Typography
+                variant="h6"
+                noWrap
+                component="a"
+                href="/"
+                sx={{
+                  mr: 2,
+                  display: { xs: "flex", md: "flex" },
+                  fontFamily: "monospace",
+                  fontWeight: 800,
+                  letterSpacing: ".3rem",
+                  color: "#a88361",
+                  textDecoration: "none",
+                  marginRight: {
+                    xs: 15,
+                    sm: 25,
+                    md: "none",
+                  },
+                }}
+              >
+                Locs
+              </Typography>
+            </Box>
+          </NavLink>
           <Box
             sx={{
               flexGrow: 1,
               display: { xs: "none", sm: "none", md: "flex" },
               marginLeft: { md: "5%", lg: "25", xl: "30%" },
-              justifyContent: {md:'space-between'}
+              justifyContent: { md: "space-between" },
             }}
           >
             {pages.map((page) => (
-              <NavLink to={page.path} key={page.page} className='links'>
+              <NavLink to={page.path} key={page.page} className="links">
                 <Button
-                  
                   onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: "white", display: "block", fontSize: { lg: '17px', xl: '18px'} }}
+                  sx={{
+                    my: 2,
+                    color: "white",
+                    display: "block",
+                    fontSize: { lg: "17px", xl: "18px" },
+                  }}
                 >
                   {page.page}
                 </Button>

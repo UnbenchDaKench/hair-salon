@@ -35,7 +35,7 @@ const Services = () => {
           {AllServices.map((service, i) => (
             <FadeInTransition>
               <Box
-                className={`service ${service.id % 2 == 0 ? "right" : ""}`}
+                className={`service ${service.id % 2 === 0 ? "right" : ""}`}
                 key={service.id}
                 sx={{
                   width: {
